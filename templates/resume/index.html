@@ -1,0 +1,946 @@
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+<title>Amit portfolio</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Resume Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+<link rel="icon" href="{% static 'images/logo.png'%}">
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="{% static "css/bootstrap.css" %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static "css/style.css" %}" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="{% static "js/jquery-2.1.4.min.js" %}"></script>
+<!-- //js -->
+<!-- fonts -->
+<link href="{% static '//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' %}" rel='stylesheet' type='text/css'>
+<link href="{% static '//fonts.googleapis.com/css?family=Acme' %}" rel='stylesheet' type='text/css'><!-- //fonts -->
+
+	<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="{% static "js/move-top.js" %}"></script>
+		<script type="text/javascript" src="{% static "js/easing.js" %}"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+	<!-- start-smoth-scrolling -->
+
+<!-- skills -->
+<script src="{% static "js/pie-chart.js" %}" type="text/javascript"></script>
+ <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('#demo-pie-1').pieChart({
+                barColor: '#10A7AF',
+                trackColor: '#fff',
+                lineCap: 'round',
+                lineWidth: 8,
+                onStep: function (from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+
+            $('#demo-pie-2').pieChart({
+                barColor: '#10A7AF',
+                trackColor: '#fff',
+                lineCap: 'butt',
+                lineWidth: 8,
+                onStep: function (from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+
+            $('#demo-pie-3').pieChart({
+                barColor: '#10A7AF',
+                trackColor: '#fff',
+                lineCap: 'square',
+                lineWidth: 8,
+                onStep: function (from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+
+			$('#demo-pie-4').pieChart({
+                barColor: '#10A7AF',
+                trackColor: '#fff',
+                lineCap: 'square',
+                lineWidth: 8,
+                onStep: function (from, to, percent) {
+                    $(this.element).find('.pie-value').text(Math.round(percent) + '%');
+                }
+            });
+        });
+    </script>
+<!-- skills -->
+<script type="text/javascript" src="{% static "js/numscroller-1.0.js" %}"></script>
+
+</head>
+<body>
+<!-- banner -->
+<div class="header-top">
+	<div class="container">
+		<ul>
+			<li><a class="scroll" href="#about"><span class="glyphicon glyphicon-file" aria-hidden="true"></span>Resume</a></li>
+			<li><a class="scroll" href="#emailme"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Email me</a></li>
+			<li><a href="javascript:window.print()"><span class="glyphicon glyphicon-print" aria-hidden="true"></span>Print CV</a></li>
+			<li><a href="#portfolioModal9" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal">
+				<span class="glyphicon glyphicon-picture" aria-hidden="true"></span>My Photo</a></li>
+		</ul>
+	</div>
+</div>
+<div class="header">
+	<div class="container">
+		<div class="col-md-8 header-left">
+			<div class="col-sm-5 pro-pic">
+				<img class="img-responsive" src="{% static "images/pic1.jpg" %}" alt=" "/>
+			</div>
+			<div class="col-sm-5 pro-text">
+				<h1>AMIT JI YADAV</h1>
+				<p>Passionate Python Developer</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="col-md-4 header-right ">
+			<ul class="list-left">
+				<li>Email:</li>
+				<!-- <li>Website:</li> -->
+				<li>Phone no:</li>
+				<li>Address: </li>
+			</ul>
+			<ul class="list-right">
+				<li><a href="mailto:yadavamit.ay@gmail.com">yadavamit.ay@gmail.com</a></li>
+				<!-- <li><a href="mailto:info@example.com">info@example.com</a></li> -->
+				<li>+91- 9452838800</li>
+				<li> Balkampet, Hyderabad, Telangana, India(500016)</li>
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!-- //banner -->
+<!-- about -->
+<div id="about" class="about">
+	<div class="container">
+		<h3 class="tittle">About Me</h3>
+		<p class="abt-para">I am a fresher looking for an opportunity to work in Python.
+			I have relevant skills of Python, Django, and Basics of Machine Learning and
+			very enthusiast to work in these technologies. Waiting for a chance to show
+			my skills and enhance it under the guidance of company.</p>
+	</div>
+	<div class="col-md-6 abt-left ">
+		<h2 style="margin-top:-6%">Education</h2>
+				<div class="accordion"  style="width:110%">
+							<div class="accordion-section">
+								<h5><a class="accordion-section-title" href="#accordion-1">
+									<span>2015 - 2018</span> MASTER OF COMPUTER APPLICATION
+								<i class="glyphicon glyphicon-chevron-down"></i><div class="clearfix"></div>
+								</a></h5>
+								<div id="accordion-1" class="accordion-section-content">
+									<b>UNIVERSITY</b>
+									<ul>
+										<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span><a href="#">Harcourt Butler Technical University,Kanpur</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="accordion-section">
+								<h5><a class="accordion-section-title" href="#accordion-2">
+									<span>2011 - 2015 </span> B.Sc.(CS)
+								<i class="glyphicon glyphicon-chevron-down"></i><div class="clearfix"></div>
+								</a></h5>
+								<div id="accordion-2" class="accordion-section-content">
+									<b>Univrsity</b>
+									<ul>
+										<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span><a href="#">University Of Allahabad</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="accordion-section">
+								<h5><a class="accordion-section-title" href="#accordion-3">
+									<span>2009 - 2011</span> Intermediate
+								<i class="glyphicon glyphicon-chevron-down"></i><div class="clearfix"></div>
+								</a></h5>
+								<div id="accordion-3" class="accordion-section-content">
+									<b>School</b>
+									<ul>
+										<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span><a href="#">Sindhu Vidya Mandir Inter College, Allahabad</a></li>
+									</ul>
+									<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Board</b>
+									<ul>
+										<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span><a href="#">Uttar Pradesh Board</a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="accordion-section">
+								<h5><a class="accordion-section-title" href="#accordion-4">
+									<span>2009 - 2011</span> High School
+								<i class="glyphicon glyphicon-chevron-down"></i><div class="clearfix"></div>
+								</a></h5>
+								<div id="accordion-4" class="accordion-section-content">
+									<b>School</b>
+									<ul>
+										<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span><a href="#">Sindhu Vidya Mandir Inter College, Allahabad</a></li>
+									</ul>
+									<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Board</b>
+									<ul>
+										<li><span class="glyphicon glyphicon-ok" aria-hidden="true"></span><a href="#">Uttar Pradesh Board</a></li>
+									</ul>
+								</div>
+							</div>
+				</div>
+
+				<script>
+							jQuery(document).ready(function() {
+								function close_accordion_section() {
+									jQuery('.accordion .accordion-section-title').removeClass('active');
+									jQuery('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+								}
+
+								jQuery('.accordion-section-title').click(function(e) {
+									// Grab current anchor value
+									var currentAttrValue = jQuery(this).attr('href');
+
+									if(jQuery(e.target).is('.active')) {
+										close_accordion_section();
+									}else {
+										close_accordion_section();
+
+										// Add active class to section title
+										jQuery(this).addClass('active');
+										// Open up the hidden content panel
+										jQuery('.accordion ' + currentAttrValue).slideDown(300).addClass('open');
+									}
+
+									e.preventDefault();
+								});
+							});
+				</script>
+	</div>
+	<div class="col-md-6 abt-right ">
+		<div class="col-sm-4 abt-gd-left text-center">
+			<div id="demo-pie-1" class="pie-title-center" data-percent="70"> <span class="pie-value"></span> </div>
+			<h4>Python</h4>
+		</div>
+
+		<div class="col-sm-4 abt-gd-left text-center">
+			<div id="demo-pie-3" class="pie-title-center" data-percent="65"> <span class="pie-value"></span> </div>
+			<h4>Django</h4>
+		</div>
+		<div class="col-sm-4 abt-gd-left text-center">
+			<div id="demo-pie-4" class="pie-title-center" data-percent="15"> <span class="pie-value"></span> </div>
+			<h4>Machine Learning</h4>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="clearfix"></div>
+</div>
+<!-- about -->
+<!-- education -->
+<div class="employment">
+	<div class="container">
+		<h3 class="tittle ">Project</h3>
+		<p class="abt-para ">I have created many projects during my academics using different technologies. But the one language i like most and to want build ore projects on is "Python". Here is the short description of my projects. </p>
+		<div class="col-md-6 employ-left">
+			<h4>01</h4>
+		</div>
+		<div class="col-md-6 employ-right">
+			<h5><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>	Chat Bot </h5>
+			<p>Decscription - A General conversation Bot with Text and Voice support</p>
+			<p>Technology – Python, Deeplearning, PyQt5 (GUI), Tensorflow (Library)</p>
+		</div>
+		<div class="col-md-6 employ-left2">
+			<h5>InLog India ka Blog<span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span></h5>
+			<p>Description - A Full Functional Multiuser Blogging Website</p>
+		  <p>Technologies – Python, Django, SQLite (Database), HTML, CSS, JavaScript, Bootstrap </p>
+		</div>
+		<div class="col-md-6 employ-right2">
+			<h4>02</h4>
+		</div>
+		<div class="col-md-6 employ-left ">
+			<h4>03</h4>
+		</div>
+		<div class="col-md-6 employ-right">
+			<h5><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>Games</h5>
+			<p>Description – Basic feature games like “Snake” and “Car Racing”</p>
+		  <p>Technologies - Python, PyGame</p>
+		</div>
+		<div class="col-md-6 employ-left2">
+			<h5>Record Keeper<span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span></h5>
+			<p>Description – An app where anyone can keep records.</p>
+		  <p>Technologies – HTML, CSS, Bootstrap, Node.js, Express.js, Mongoose, Mongo DB, Ajax </p>
+		</div>
+		<div class="col-md-6 employ-right2">
+			<h4>04</h4>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!-- education -->
+
+<div style="border:3px solid #edeff2">
+
+</div>
+
+<!-- //num scroller -->
+<!-- portfolio -->
+<div class="portfolio">
+	<div class="container">
+		<h3 class="tittle ">Project Snaps</h3>
+			<div class="portfolio-grids">
+				<script src="{% static "js/easyResponsiveTabs.js" %}" type="text/javascript"></script>
+				<script type="text/javascript">
+									$(document).ready(function () {
+										$('#horizontalTab').easyResponsiveTabs({
+											type: 'default', //Types: default, vertical, accordion
+											width: 'auto', //auto or any width like 600px
+											fit: true   // 100% fit in a container
+										});
+									});
+
+				</script>
+				<div class="sap_tabs">
+					<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+						<ul class="resp-tabs-list">
+							<li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>All</span></li>
+							<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Chat bot</span></li>
+							<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Inlog</span></li>
+							<li class="resp-tab-item" aria-controls="tab_item-3" role="tab"><span>Games</span></li>
+						</ul>
+						<div class="resp-tabs-container">
+							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
+								<div class="container">
+									<div class="col-md-3 team-gd ">
+										<div class="thumb">
+											<a href="#portfolioModal1" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="{% static "images/pic4.png" %}" alt="">
+											<div class="team_pos">
+												<ul>
+													<li>
+														<div class="morph pic fb_icon1">
+														</div>
+													</li>
+												</ul>
+											</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-md-3 team-gd ">
+										<div class="thumb">
+											<a href="#portfolioModal2" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="{% static "images/pic6.png" %}" alt="">
+											<div class="team_pos">
+												<ul>
+													<li>
+														<div class="morph pic fb_icon1">
+														</div>
+													</li>
+												</ul>
+											</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-md-3 team-gd ">
+										<div class="thumb">
+											<a href="#portfolioModal3" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="{% static "images/pic7.png" %}" alt="">
+											<div class="team_pos">
+												<ul>
+													<li>
+														<div class="morph pic fb_icon1">
+														</div>
+													</li>
+												</ul>
+											</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-md-3 team-gd ">
+										<div class="thumb">
+											<a href="#portfolioModal4" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="{% static "images/pic8.jpg" %}" alt="" style="margin-top:15%">
+											<div class="team_pos">
+												<ul>
+													<li>
+														<div class="morph pic fb_icon1"  style="margin-top:-10%">
+														</div>
+													</li>
+												</ul>
+											</div>
+											</a>
+										</div>
+									</div>
+								</div>
+
+								<div class="container" >
+									<div class="col-md-3 team-gd ">
+										<div class="thumb">
+											<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="{% static "images/pic9.jpg" %}" alt="" style="margin-top:15%">
+											<div class="team_pos">
+												<ul>
+													<li>
+														<div class="morph pic fb_icon1" style="margin-top:-10%">
+														</div>
+													</li>
+												</ul>
+											</div>
+											</a>
+										</div>
+									</div>
+									<br>
+									<div class="col-md-3 team-gd ">
+										<div class="thumb">
+											<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="{% static "images/pic10.jpg" %}" alt="" style="margin-top:10%">
+											<div class="team_pos">
+												<ul>
+													<li>
+														<div class="morph pic fb_icon1" style="margin-top:-15%">
+														</div>
+													</li>
+												</ul>
+											</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-md-3 team-gd ">
+										<div class="thumb">
+											<a href="#portfolioModal7" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="{% static "images/pic11.png" %}" alt="">
+											<div class="team_pos">
+												<ul>
+													<li>
+														<div class="morph pic fb_icon1" style="margin-top:-10%">
+														</div>
+													</li>
+												</ul>
+											</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-md-3 team-gd ">
+										<div class="thumb">
+											<a href="#portfolioModal8" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="{% static "images/pic12.png" %}" alt="">
+											<div class="team_pos">
+												<ul>
+													<li>
+														<div class="morph pic fb_icon1" style="margin-top:-10%">
+														</div>
+													</li>
+												</ul>
+											</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+								</div>
+
+
+							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal1" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="{% static "images/pic4.png" %}" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd  ">
+									<div class="thumb">
+										<a href="#portfolioModal2" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="{% static "images/pic6.png" %}" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal3" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="{% static "images/pic7.png" %}" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+
+							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal4" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="{% static "images/pic8.jpg" %}" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1" style="margin-top:-20%">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="{% static "images/pic9.jpg" %}" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1" style="margin-top:-20%">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd">
+									<div class="thumb">
+										<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="{% static "images/pic10.jpg" %}" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1" style="margin-top:-20%">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-3">
+								<div class="col-md-3 team-gd ">
+									<div class="thumb">
+										<a href="#portfolioModal7" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="{% static "images/pic11.png" %}" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1" style="margin-top:-10%">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-3 team-gd  ">
+									<div class="thumb">
+										<a href="#portfolioModal8" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="{% static "images/pic12.png" %}" alt="">
+										<div class="team_pos">
+											<ul>
+												<li>
+													<div class="morph pic fb_icon1" style="margin-top:-10%">
+													</div>
+												</li>
+											</ul>
+										</div>
+										</a>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>
+<!-- //portfolio -->
+
+
+
+<!-- more skills -->
+<div class="more">
+	<div class="container">
+		<h3 class="tittle ">Skills</h3>
+		<div class="col-md-6 skill-left ">
+			<div class="progress">
+				  <div class="progress-bar progress-bar-success" style="width: 30%">Python
+					<span class="sr-only">35% Complete (success)</span>
+				  </div>
+				  <div class="progress-bar progress-bar-warning " style="width: 40%">
+					<span class="sr-only"></span>
+				  </div>
+				  <p>70%</p>
+				  <div class="clearfix"></div>
+			</div>
+			<div class="progress">
+				  <div class="progress-bar progress-bar-success1" style="width: 30%">Django
+					<span class="sr-only">35% Complete (success)</span>
+				  </div>
+				  <div class="progress-bar progress-bar-warning1" style="width: 35%">
+					<span class="sr-only"></span>
+				  </div>
+				  <p>65%</p>
+				  <div class="clearfix"></div>
+			</div>
+			<div class="progress">
+				  <div class="progress-bar progress-bar-success3" style="width: 30%">Machine Learning
+					<span class="sr-only">35% Complete (success)</span>
+				  </div>
+				  <div class="progress-bar progress-bar-warning3 " style="width: 1%">
+					<span class="sr-only"></span>
+				  </div>
+				  <p>15%</p>
+				  <div class="clearfix"></div>
+			</div>
+			<div class="progress">
+				  <div class="progress-bar progress-bar-success2" style="width: 30%">Node.js
+					<span class="sr-only">35% Complete (success)</span>
+				  </div>
+				  <div class="progress-bar progress-bar-warning2" style="width: 15%">
+					<span class="sr-only"></span>
+				  </div>
+				  <p>40%</p>
+				  <div class="clearfix"></div>
+			</div>
+
+			<div class="progress no-marg">
+				  <div class="progress-bar progress-bar-success4" style="width: 30%">C language
+					<span class="sr-only">35% Complete (success)</span>
+				  </div>
+				  <div class="progress-bar progress-bar-warning4" style="width: 30%">
+					<span class="sr-only"></span>
+				  </div>
+				  <p>60%</p>
+				  <div class="clearfix"></div>
+			</div>
+		</div>
+
+
+		<div class="col-md-6 skill-right ">
+			<img src="{% static 'images/pic13.jpg'%}" alt="python", width = '25%', height='25%'>
+			<img src="{% static 'images/pic14.png'%}" alt="django", width = '30%', height='30%'>
+			<img src="{% static 'images/pic15.png'%}" alt="ml", width = '15%', height='15%'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="{% static 'images/pic16.png'%}" alt="opencv", width = '15%', height='12%'>&nbsp;&nbsp;&nbsp;
+			<img src="{% static 'images/pic21.png'%}" alt="pyqt", width = '20%', height='20%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;
+			<img src="{% static 'images/pic22.png'%}" alt="pygame", width = '30%', height='40%'>
+
+			<img src="{% static 'images/pic18.jpg'%}" alt="node", width = '15%', height='15%'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;
+			<img src="{% static 'images/pic17.png'%}" alt="", width = '15%', height='15%'>&nbsp;&nbsp;&nbsp;;&nbsp;&nbsp;
+			<img src="{% static 'images/pic19.png'%}" alt="java", width = '15%', height='10%'>&nbsp;&nbsp;&nbsp;
+			<img src="{% static 'images/pic20.png'%}" alt="JavaScript", width = '20%', height='15%'>&nbsp;&nbsp;&nbsp;
+			<img src="{% static 'images/pic23.png'%}" alt="mongodb", width = '25%', height='8%'>&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+
+
+		</div>
+
+
+		<div class="clearfix"></div>
+	</div>
+</div>
+<!-- more skills -->
+
+<!-- num scroller -->
+<div class="num-scroller">
+	<div class="container">
+		<h3 class="tittle ">Milestones Achieved</h3>
+		<div class="col-md-3 capabil-grid text-center">
+
+			<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='10' data-delay='10' data-increment="1">10</div>
+			<p>Projects Done</p>
+		</div>
+		<div class="col-md-3 capabil-grid text-center">
+
+			<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='15' data-delay='10' data-increment="1">15</div>
+			<p>Testing</p>
+		</div>
+		<div class="col-md-3 capabil-grid text-center" >
+
+			<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='0' data-delay='10' data-increment="100">0</div>
+			<p>Clients</p>
+		</div>
+		<div class="col-md-3 capabil-grid text-center">
+			<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='100' data-delay='40' data-increment="1">100</div>
+			<p>Likes</p>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+
+<!-- contact -->
+<div id="emailme" class="contact">
+	<div class="container">
+		<h3 class="tittle">Contact</h3>
+		<div class="col-md-6 contact-left ">
+			<div class="horizontal-tab">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#tab1" data-toggle="tab" aria-expanded="false">Contact me</a></li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active in" id="tab1">
+						<div class="contact-form">
+							<ul>
+								<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>Balkampet, Hyderabad, Telangana <span>India, 500016</span></li>
+								<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:yadavamit.ay@gmail.com">yadavamit.ay@gmail.com</a></li>
+								<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+91-9452838800</li>
+							</ul>
+
+							<form class="" action="/contact/" method="post" style="color:white">
+								{% csrf_token %}
+									{{ form.as_p }}
+									<input type="submit" value="Submit" >
+							</form>
+
+							<!-- <form>
+								<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+								<input type="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+								<textarea type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
+								<input type="submit" value="Submit" >
+							</form> -->
+						</div>
+
+					</div>
+					<div class="tab-pane" id="tab2">
+					  <div class="contact-form">
+						</div>
+					</div>
+
+				</div>
+            </div>
+		</div>
+		<div class="col-md-6 contact-right ">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15225.198271742442!2d78.44156741292029!3d17.445370258700105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb90c0c2945721%3A0x47203ab3092073b4!2sBalkampet%2C+Hyderabad%2C+Telangana!5e0!3m2!1sen!2sin!4v1529566611073" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7205.640121439762!2d81.86797357223165!3d25.44427867333197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399ab556bed0445b%3A0x63aa79bd91a91825!2sAlopi+Bagh%2C+Allahabad%2C+Uttar+Pradesh!5e0!3m2!1sen!2sin!4v1529480662214"  frameborder="0" style="border:0" allowfullscreen></iframe> -->
+		</div>
+		<div class="clearfix"></div>
+		<p class="copy-right">&copy 2016 Resume. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+	</div>
+</div>
+<!-- //contact -->
+<!-- for bootstrap working -->
+	<script src="{% static "js/bootstrap.js" %}"></script>
+<!-- //for bootstrap working -->
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Chat Bot</h3>
+                        <img src="{% static "images/pic4.png" %}" class="img-responsive img-centered" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Chat Bot</h3>
+                        <img src="{% static "images/pic6.png" %}" class="img-responsive img-centered" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Chat Bot</h3>
+                        <img src="{% static "images/pic7.png" %}" class="img-responsive img-centered" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>InLog</h3>
+                        <img src="{% static "images/pic8.jpg" %}" class="img-responsive img-centered" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>InLog</h3>
+                        <img src="{% static "images/pic9.jpg" %}" class="img-responsive img-centered" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>InLog</h3>
+                        <img src="{% static "images/pic10.jpg" %}" class="img-responsive img-centered" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Cars</h3>
+                        <img src="{% static "images/pic11.png" %}" class="img-responsive img-centered" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+						<h3>Snake</h3>
+                        <img src="{% static "images/pic12.png" %}" class="img-responsive img-centered" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="portfolio-modal modal fade slideanim" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content port-modal">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl"></div>
+            </div>
+        </div>
+        <div class="container">
+			<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <div class="modal-body">
+                        <img src="{% static "images/pic1.jpg" %}" class="img-responsive img-centered" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+	<!--scrolling js-->
+	<script src="{% static "js/jquery.nicescroll.js" %}"></script>
+	<script src="{% static "js/scripts.js" %}"></script>
+	<!--//scrolling js-->
+	<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear'
+			};
+		*/
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+
+</body>
+</html>
